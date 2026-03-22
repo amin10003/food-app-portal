@@ -20,12 +20,9 @@
     }
   </style>
   <body>
-    <div id="container" class="bg-[]">
-      <header class="bg-[#D53E0F] px-4 text-white h-14">
-       <nav
-          id="smallnav"
-          class="bg-[#D53E0F]"
-        >
+    <div id="container" class="bg-[#Ed9b] m-4 p-6 h-screen">
+      <header class="bg-[#D53E0F] sm:px-4 md:px-6 lg:px-6 sm:items-center text-white h-14 sm:h-24  items-center">
+        <nav id="smallnav" class="bg-[#D53E0F]">
           <div
             class="sm:hidden xl:hidden lg:hidden relative flex justify-between items-center px-4 pt-2"
           >
@@ -57,7 +54,7 @@
 
         <!-- bignav -->
 
-         <nav class="hidden sm:block lg:block xl:block">
+        <nav class="hidden sm:block lg:block xl:block">
           <div
             class="flex justify-between items-center bg-[#D53E0F] Px-6 text-white px-6 h-14"
           >
@@ -72,26 +69,66 @@
             <ul class="flex justify-between gap-6 font-bold">
               <li><a href="/" class="hover:border-b-2">Home</a></li>
               <li><a href="abouUs.html" class="hover:border-b-2">About</a></li>
-              <li><a href="services.html" class="hover:border-b-2">Services</a></li>
-              <li><a href="contacts.html" class="hover:border-b-2">Contacts</a></li>
+              <li>
+                <a href="services.html" class="hover:border-b-2">Services</a>
+              </li>
+              <li>
+                <a href="contacts.html" class="hover:border-b-2">Contacts</a>
+              </li>
             </ul>
           </div>
         </nav>
       </header>
-      <!-- <main class="mt-20">
-        <section id="hero" class="flex justify-between ">
-          <div id="sectiondiv" class="bg-[#F2EAE0] py-8 mt-12 flex gap-4 rounded-xl items-center">
-           <p class="w-half h-full item-center mt-[18px] text-center justify-center font-[var(--font-body)]">
-             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia Magnam, ab! Magnam amet mollitia suscipit
-            magni ad odio tempora.
-           </p>
-           <div id="herom-img" class=" w-half rounded-xl">
-            <img src="images/dishfood.jpg" alt="hero-img" class="w-full h-full">
+      <!-- maain -->
+      <main class="sm:mt-20 md:mt-20 lg:mt-20 xl:mt-20">
+        <!-- hero for mobile -->
+        <section
+          id="hero"
+          class="flex justify-between text-white items-center sm:hidden md:hidden lg:hidden xl:hidden bg-[#D53E0F] border-b-2 rounded-b-xl"
+        >
+          <div
+            id="sectiondiv"
+            class="flex gap-4 rounded-xl items-center h-[50%] px-4 py-4"
+          >
+            <p
+              class="w-half h-full item-center mt-[18px] text-center justify-center font-bold text-2xl"
+            >
+              TASTE THE TASTY!
+            </p>
+            <div id="herom-img" class="w-half rounded-xl">
+              <img
+                src="images/humburger.jpg"
+                alt="hero-img"
+                class="w-full h-full rounded-full"
+              />
+            </div>
           </div>
-          </div>
-          
         </section>
-      </main> -->
+
+        <!-- hero for large devices -->
+        <section
+          id="hero2"
+          class="flex justify-between text-white items-center hidden sm:block md:block lg:block xl:block  border-b-2 rounded-b-xl bg-[#9B0F06]"
+        >
+          <div
+            id="sectiondiv"
+            class="flex gap-4 rounded-xl items-center max-h-80vh px-4 py-4"
+          >
+            <p
+              class="w-[50%] h-full item-center mt-[18px] text-center justify-center font-bold text-2xl"
+            >
+              TASTE THE TASTY!
+            </p>
+            <div id="herom-img" class="w-half rounded-xl">
+              <img
+                src="images/humburger.jpg"
+                alt="hero-img"
+                class="w-full h-full rounded-xl"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
